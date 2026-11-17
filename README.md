@@ -17,12 +17,11 @@ Base de datos relacional diseñada para un comercio minorista de componentes y h
 
 Para inicializar y poblar la base de datos correctamente desde cero, los scripts **deben ejecutarse estrictamente en el siguiente orden numérico**:
 
-1. `01_CreacionBD.sql` — Crea la base de datos `BDD2_TPI`, las 11 tablas, claves primarias, foráneas, valores por defecto y restricciones `CHECK`.
-2. `02_Triggers.sql` — Implementa los 3 triggers responsables de la automatización en cascada del inventario. *(Debe ejecutarse antes de cargar los datos, o va a haber errores de carga).*
-3. `03_Vistas.sql` — Crea las 3 vistas comerciales y de alerta de inventario.
-4. `04_Procedimientos.sql` — Crea los 2 procedimientos almacenados (reporte parametrizado y acción transaccional con `TRY...CATCH`).
-5. `05_Datos.sql` — Inserta el lote de datos de ejemplo coherentes para todas las tablas y dispara las primeras trazas de stock.
-6. `06_Pruebas.sql` — Script de verificación con consultas sobre las vistas, ejecución de SPs (casos de éxito y validación) y prueba en vivo de los triggers.
+1. `CreacionBD.sql` — Crea la base de datos `BDD2_TPI`, las 11 tablas, claves primarias, foráneas, valores por defecto y restricciones `CHECK`.
+2. `Triggers.sql` — Implementa los 3 triggers responsables de la automatización en cascada del inventario. *(Debe ejecutarse antes de cargar los datos, o va a haber errores de carga).*
+3. `Vistas.sql` — Crea las 3 vistas comerciales y de alerta de inventario.
+4. `Procedimientos.sql` — Crea los 2 procedimientos almacenados (reporte parametrizado y acción transaccional con `TRY...CATCH`).
+5. `Datos.sql` — Inserta el lote de datos de ejemplo coherentes para todas las tablas y dispara las primeras trazas de stock.
 
 ---
 
